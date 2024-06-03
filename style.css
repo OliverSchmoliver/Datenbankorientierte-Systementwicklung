@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'typewriter';
+    src: url('../fonts/teacher_scribble-webfont.woff') format('woff');
+}
+
+body {
+	padding: 20 0 0 0;
+	margin:0px;
+	font-size: 40px;
+	font-family:'typewriter';
+}
+
+/* Padding immer in Höhe/Breite integrieren */
+div {
+	box-sizing:border-box;
+}
+
+/* Cleafix für Float-Layouts */	
+.clearfix {
+	clear:both;
+}
+
+#header {
+	position: fixed;
+	width:100%;
+	z-index:10;
+	background: #21290d;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Registerkarten*/
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+.tab {
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+}
+.tab::after {
+    content: '';
+    height: 20px;
+    width: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.tab:last-child::after {
+    content: none;
+}
+
+.tab:hover {
+    color: #fdcf02;
+}
+
+/*Hintergrundbild und Überschrift*/
+#header-image {
+    background-image: url(../images/olli.PNG);
+    height: 700px;
+    background-size: 800px;
+    background-position: center;
+    padding: 120px;
+}
+
+#header-image h1 {
+    color: #fdcf02;
+    position: relative;
+    text-align: center;
+    font-size: 200px;
+    text-shadow: 10px 10px 10px #000;
+    user-select: none;
+}
+
+#footer {
+	width:100%;
+	padding:40px;
+	background: #21290d;
+	color:#fff;
+    font-size: 40px;
+}
+
+.footer-right {
+    float: right;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*Media Query für kleinere Screens*/
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 25px;
+    }
+    
+    #header-image {
+        height: 500px;
+        position: relative;
+    }
+
+    #header-image h1 {
+        font-size: 80px;
+    }
+    
+    .tab {
+        padding: 10px 20px;
+        font-size: 25px;
+        text-decoration: none;
+        position: relative;
+    }
+
+    #footer {
+        font-size: 25px;
+    }
+    
+}
