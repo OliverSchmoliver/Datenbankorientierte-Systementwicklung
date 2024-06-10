@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirplaneFood</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="wrapper">
+            <div class="burger" id="burger_menu">
+                <img src="images/menu.svg" alt="Burger" width="40"/>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="gigs.html">Upcoming Gigs</a></li>
+                    <li><a href="gallerie.html">Gallerie</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="music.html">Releases</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="header-image"></div>
+    
+    <div class="wrapper">
+        <h1>First EP-Release Countdown:</h1>
+        <!-- Display the countdown timer in an element -->
+        <p id="countdown"></p>
+
+        <script>
+        var countDownDate = new Date("July 1, 2024 00:00:00").getTime();
+        var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "READY FOR TAKE OFF! is out now!";
+        }
+        }, 1000);
+        </script>
+        <img src="images/Album_Cover_Blurred.PNG" width="400" height="400">
+
+    </div>
+    
+    <div id="footer">
+        <div>
+            &copy; 2024
+            <div class="footer-right">
+                <a href="Impressum_Datenschutz.html">Datenschutz und Impressum</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

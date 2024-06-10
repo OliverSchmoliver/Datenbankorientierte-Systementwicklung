@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'teacher scribble';
+    src: url('../fonts/teacher_scribble-webfont.woff') format('woff');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    font-family: 'teacher scribble';
+    background-color: #4e4e4e;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.clearfix {
+	clear:both;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+#menu ul li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    background: #d5241a;
+}
+
+.burger {
+    float: right;
+    padding: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.burger.active {
+    transform: rotate(360deg);
+
+  }
+
+.burger img {
+    width: 40px;
+    height: auto;
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background: #960a0a;
+    z-index: 10;
+    background: #00000094;
+    color: #fff;
+    padding: 0;
+    height: 80px;
+}
+
+#header-image {
+    background-image: url(../images/olli.PNG);
+    height: 340px;
+    background-size: cover;
+    background-position: center center;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+}
+
+#countdown-image {
+    background-image: url(../images/Album_Cover_Blurred.PNG);
+    height: 1000px;
+    background-size: cover;
+    background-position: center center;
+    padding: 130px;
+    text-align: center;
+    position: relative;
+}
+
+#header-image h1 {
+    color: #ff0000;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 60px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.col-25, .col-30, .col-70, .col-100, .col-33{
+	float:left;
+}
+.col-25 {
+	width:25%;
+	padding: 50px 11px 30px;
+}
+.col-100 {
+	width:100%;
+	text-align:center;
+	padding:20px 0 0 0;
+}
+.col-33 {
+	width:33.33%;
+	text-align: center;
+	padding: 100px 20px 70px 20px;
+}
+.col-30 {
+	width:30%;
+}
+.col-70 {
+	width:70%;
+	padding-right: 80px;
+}
+
+.feature-image {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+    border-radius: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: all 0.2s;
+}
+
+.bg-color {
+    background: #e8f7ff;
+    padding: 50px;
+}
+
+.impression {
+	height:250px;
+	object-fit:cover;
+}
+
+#footer {
+    width: 100%;
+    padding: 40px;
+    background: #4e4e4e;
+    color: #fff;
+}
+
+.footer-right {
+    float: right;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none; 
+}
+
+a.button {
+    display: block;
+    max-width: 220px;
+    padding: 20px;
+    background: #ffba00;
+    margin: auto;
+    border-radius: 15px;
+    text-transform: uppercase;
+
+    font-weight: bold;
+    color: #060202;
+    text-decoration: none;
+    position: relative;
+}
+
+a.button:hover {
+    background: #bf910c;
+    color: #fff;
+}
+
+.responsive-image {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.col-33 .button {
+    font-size: 25px;
+    padding: 15px 15px;
+    margin-top: 10px;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+
+  
+* {
+    box-sizing: border-box;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+ 
+
+@media screen and (min-width: 993px) {
+    .burger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .col-25, .col-30, .col-70, .col-33 {
+		width:100%;
+	}
+    #header-image {
+        padding: 90px 0;
+    }
+
+    #menu {
+        display: none;
+        float: none;
+        background: #00000094;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu ul li {
+        display: block;
+    }
+
+    #menu.nav-active {
+        display: flex;
+    }
+}
