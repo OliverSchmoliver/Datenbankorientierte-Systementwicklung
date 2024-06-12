@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="images/logo_weiss.PNG">
 </head>
 <body>
+    <div id="header-image"></div>
     <header id="header">
         <div class="wrapper">
             <div class="burger" id="burger_menu">
@@ -24,12 +25,20 @@
                     <li><a href="music.html">Releases</a></li>
                 </ul>
             </nav>
-        </div>
+        </div>        
     </header>
-    <div id="header-image"></div>
-    <div>
-        <h1>Forum</h1>
+
+    <div class="main-content"style="padding-top: 0px;">
+    <div class="wrapper">
+        <h1>First EP-Release Countdown:</h1>
+        <p id="countdown"></p>
+        <img src="images/Album_Cover_Blurred.PNG" width="400" height="400">
     </div>
+    
+    <div id="cookie-banner" style="display: none;">
+        <p>We use cookies to enhance your experience. <button id="accept-cookies">Got it!</button></p>
+    </div>
+
     <div id="footer">
         <div>
             &copy; 2024
@@ -45,6 +54,8 @@
             </div>
         </div>
     </div>
+    </div>
     <script src="js/script.js"></script>
+    <script src="js/releases.js"></script>
 </body>
 </html>
