@@ -1,53 +1,66 @@
 <!doctype html>
 <html lang="de">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>AirplaneFood</title>
-		<link rel="stylesheet" href="css/style.css">
-		
-	</head>
-	
-	<body>
-
-		<header id="header">
-			<div class="wrapper">
-				<div class="burger" id="burger_menu">
-					<img src="images/menu.svg" alt="Burger" width="40"/>
-				</div>
-				<nav id="menu">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About us</a></li>
-						<li><a href="gigs.html">Upcoming Gigs</a></li>
-						<li><a href="gallerie.html">Gallerie</a></li>
-						<li><a href="forum.html">Forum</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		
-		
-		<div id="header-image">
-			
-		</div>
-
-	<div>
-
-		<h1>Upcoming Gigs</h1>
-
-	</div>
-	
-	<div id="footer">
-		
-		<div>
-			&copy; 2024
-			<div class="footer-right">
-				<a href="">Datenschutz und Impressum</a>
-			</div>
-			
-		</div>
-	</div>
-		
-	</body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirplaneFood</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="wrapper">
+            <div class="burger" id="burger_menu">
+                <img src="images/menu.svg" alt="Burger" width="40"/>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="gigs.html">Upcoming Gigs</a></li>
+                    <li><a href="gallerie.html">Gallerie</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="music.html">Releases</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="header-image"></div>
+    <div class="wrapper">
+        <div class="col-70">
+        <p>Upcoming Gigs:</p>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=UTC&bgcolor=%23616161&showTitle=0&showTabs=0&showCalendars=0&showPrint=0&title=Airplanefood%20Events&src=YWlycGxhbmVmb29kLm1hbmFnZW1lbnRAZ21haWwuY29t&color=%23039BE5" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <!-- Google Calendar Appointment Scheduling begin -->
+        </div>
+    
+        <div class="col-30">    
+        <p>Or book us now!</p>
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+        var target = document.currentScript;
+        window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2McOR5tPdRXW_vdXjCGWwUvY1Sxrlj4V1F4CDZIOVaTILiaaoxQ5-wBYZ4vUVoc5nQP7np34_U?gv=true',
+            color: '#039BE5',
+            label: 'Book an appointment',
+            target,
+            });
+        });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div id="footer">
+        <div>
+            &copy; 2024
+            <div class="footer-right">
+                <a href="Impressum_Datenschutz.html">Datenschutz und Impressum</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
 </html>

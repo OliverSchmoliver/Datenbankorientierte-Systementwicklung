@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>AirplaneFood</title>
 		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js"></script>
 		
 	</head>
 	
@@ -18,10 +19,12 @@
 				<nav id="menu">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About us</a></li>
-						<li><a href="gigs.html">Upcoming Gigs</a></li>
-						<li><a href="gallerie.html">Gallerie</a></li>
-						<li><a href="forum.html">Forum</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="gigs.html">Upcoming Gigs</a></li>
+                    <li><a href="gallerie.html">Gallerie</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="music.html">Releases</a></li>
+
 					</ul>
 				</nav>
 			</div>
@@ -32,11 +35,45 @@
 			
 		</div>
 
-	<div>
+		
 
-		<h1>Forum</h1>
+		<table>
+			<thead>
+				<tr>
+					<td>Nr</td>
+					<td>Song</td>
+					<td>Bewertung</td>
+					<td>Kommentar</td>
+				</tr>
+			</thead>
+			<tbody id="table-content">
+				<!-- Wird dynamisch mit JS befüllt -->
+		   </tbody>
+		</table>
 
-	</div>
+
+		<div id="neue-bewertung">
+			<h2>Neue Bewertung</h2>
+
+			<form id="form">
+				<input type="hidden" id="id">
+
+				<label>Song</label>
+				<input type="text" id="song">
+				
+				<label>Kommentar</label>
+				<textarea id="kommentar" rows="4" cols="31"></textarea>
+				
+				<label>Bewertung</label>
+				<input type="range" id="bewertung" min="0" max="10" step="1">
+
+				<button type="button" id="speichern">Neue Bewertung speichern</button>
+
+				<button type="button" id="aktualisieren">Aktualisieren</button>
+			</form>
+		</div>
+
+		
 	
 	<div id="footer">
 		

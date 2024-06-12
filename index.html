@@ -1,53 +1,113 @@
 <!doctype html>
 <html lang="de">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>AirplaneFood</title>
-		<link rel="stylesheet" href="css/style.css">
-		
-	</head>
-	
-	<body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirplaneFood</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-		<header id="header">
-			<div class="wrapper">
-				<div class="burger" id="burger_menu">
-					<img src="images/menu.svg" alt="Burger" width="40"/>
-				</div>
-				<nav id="menu">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About us</a></li>
-						<li><a href="gigs.html">Upcoming Gigs</a></li>
-						<li><a href="gallerie.html">Gallerie</a></li>
-						<li><a href="forum.html">Forum</a></li>
-					</ul>
-				</nav>
+</head>
+<body>
+    <header id="header">
+        <div class="wrapper">
+            <div class="burger" id="burger_menu">
+                <img src="images/menu.svg" alt="Burger" width="40"/>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="gigs.html">Upcoming Gigs</a></li>
+                    <li><a href="gallerie.html">Gallerie</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="music.html">Releases</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="content">
+        <div id="header-image"></div>
+        <!-- <div>
+            <h1>Welcome to AirplaneFood</h1>
+                <img src="images/Group_Scream.jpg">
+            <p></p>
+        </div> -->
+
+        <div class="wrapper">
+
+        <div class="col-33">
+            <img src="images/Album_Cover_Blurred.PNG" class="feature-image" />
+            <strong>Release Radar</strong>
+            <a class="button" href="music.html">Finally!</a>
+        </div>
+    
+        <div class="col-33">
+            <img src="images/IMG_0565.JPG" class="feature-image" />
+            <strong>Upcoming Gigs</strong>
+            <a class="button" href="gigs.html">Never miss a concert!</a>
+        </div>
+        
+        <div class="col-33">
+            <img src="images/airplanefood_tribaun_-002.jpg" class="feature-image" />
+            <strong>Be Part of AirplaneFood</strong>
+            <a class="button" href="forum.html">Let's take off!</a>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+
+        <div class="wrapper">
+			
+			<div class="col-100">
+				<h2>Past Gig Highlights</h2>
 			</div>
-		</header>
-		
-		
-		<div id="header-image">
+			
+			<div class="col-25">
+				<img src="images/IMG_0550.JPG" class="responsive-image impression" />
+			</div>
+			
+			<div class="col-25">
+				<img src="images/airplanefood_tribaun_-047.jpg" class="responsive-image impression" />
+			</div>
+			
+			<div class="col-25">
+				<img src="images/IMG_1273.jpg" class="responsive-image impression" />
+			</div>
+			
+			<div class="col-25">
+				<img src="images/30bbb0fd-c7b7-4478-9d58-d9a25944b516.JPG" class="responsive-image impression" />
+			</div>
+			
+			<div class="clearfix"></div>
 			
 		</div>
-
-	<div>
-
-		<h1>Hello World</h1>
-
-	</div>
-	
-	<div id="footer">
-		
-		<div>
-			&copy; 2024
-			<div class="footer-right">
-				<a href="">Datenschutz und Impressum</a>
+        <div class="wrapper">
+            <div class="col-100">
+				<h3>Follow us!</h3>
+                
 			</div>
-			
-		</div>
-	</div>
-		
-	</body>
+            <div class="clearfix"></div> 
+            <div class="icon-container">
+                <a href="https://www.instagram.com/4irplanefood/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-youtube"></a>
+                <a href="https://www.tiktok.com/@airplanefood" class="fa"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                    </svg>
+                </a>
+            </div>
+			<div class="clearfix"></div> 
+            <p></p>           
+        </div>
+
+        <div id="footer">
+            <div>
+                &copy; 2024
+                <div class="footer-right">
+                    <a href="Impressum_Datenschutz.html">Datenschutz und Impressum</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
 </html>

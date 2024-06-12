@@ -4,41 +4,52 @@
 }
 
 body {
-	padding: 0 0 0 0;
-	margin:0px;
-	font-size: 40px;
-	font-family:'teacher scribble';
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    font-family: 'teacher scribble';
+    background-color: #ffffff;
 }
 
-/* Padding immer in Höhe/Breite integrieren */
 div {
-	box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-/* Maximalbreite und Zentrierung für Content */
+#impressum{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+.clearfix {
+	clear:both;
+}
+
 .wrapper {
     max-width: 1200px;
     margin: auto;
 }
 
+
 #menu {
-    width: 70%;
-    float: right;
+    display: flex;
+    justify-content: center;
 }
 
 #menu ul {
-    padding: 0px;
-    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
     text-align: right;
 }
 
-/* Inline-Block lässt Liste einzeilig werden */
 #menu ul li {
-    display: inline-block;
     list-style-type: none;
+    margin-left: 20px;
 }
 
-/* Display:Block lässt einzelne Links als große Hover-Flächen erscheinen */
 #menu ul li a {
     display: block;
     padding: 25px 20px;
@@ -47,25 +58,41 @@ div {
     text-decoration: none;
     font-weight: bold;
 }
+
 #menu ul li a:hover {
     background: #d5241a;
 }
 
 .burger {
     float: right;
-    padding: 20px;
+    padding: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.burger.active {
+    transform: rotate(360deg);
+
+  }
+
+.burger img {
+    width: 40px;
+    height: auto;
 }
 
 #header {
-	position: absolute;
-	top:250px;
-	left:0;
-	width:100%;
-	background: #960a0a;
-	z-index:10;
-	background: #00000094;
-	color:#fff;
-    padding: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+    background: #00000094;
+    color: #fff;
+    padding: 0;
     height: 90px;
 }
 
@@ -74,28 +101,76 @@ div {
     height: 340px;
     background-size: cover;
     background-position: center center;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+}
+
+#countdown-image {
+    background-image: url(../images/Album_Cover_Blurred.PNG);
+    height: 1000px;
+    background-size: cover;
+    background-position: center center;
     padding: 130px;
     text-align: center;
     position: relative;
 }
 
-#header-image h1 {
-    color: #ff0000;
-    text-transform: uppercase;
-    position: relative;
-    font-size: 60px;
+.clearfix {
+    clear: both;
 }
 
-/* Cleafix für Float-Layouts */	
-.clearfix {
-	clear:both;
+.col-25, .col-30, .col-70, .col-100, .col-33{
+	float:left;
+}
+.col-25 {
+	width:25%;
+	padding: 50px 11px 30px;
+}
+.col-100 {
+	width:100%;
+	text-align:center;
+	padding:20px 0 0 0;
+}
+.col-33 {
+	width:33.33%;
+	text-align: center;
+	padding: 100px 20px 70px 20px;
+}
+.col-30 {
+	width:30%;
+}
+.col-70 {
+	width:70%;
+	padding-right: 80px;
+}
+
+.feature-image {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+    border-radius: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: all 0.2s;
+}
+
+.bg-color {
+    background: #e8f7ff;
+    padding: 50px;
+}
+
+.impression {
+	height:250px;
+	object-fit:cover;
 }
 
 #footer {
-	width:100%;
-	padding:40px;
-	background: #4e4e4e;
-	color:#fff;
+    width: 100%;
+    padding: 40px;
+    background: #4e4e4e;
+    color: #fff;
 }
 
 .footer-right {
@@ -104,27 +179,220 @@ div {
 
 #footer a {
     color: #fff;
+    text-decoration: none; 
+}
+
+a.button {
+    display: block;
+    max-width: 220px;
+    padding: 20px;
+    background: #d5241a;
+    margin: auto;
+    border-radius: 15px;
+    text-transform: uppercase;
+
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+}
+
+a.button:hover {
+    background: #b31d16;
+    color: #fff;
+}
+
+.responsive-image {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.col-33 .button {
+    font-size: 25px;
+    padding: 15px 15px;
+    margin-top: 10px;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+
+  
+* {
+    box-sizing: border-box;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
     text-decoration: none;
 }
 
-/* Media Query - Burger auf großen Displays nicht anzeigen */
-@media screen and (min-width:993px) {
-	.burger {
-		display:none;
-	}
+a {
+    color: #0056b3;
+    text-decoration: none;
 }
-@media screen and (max-width:992px) {
-	
 
-	#header-image {
-	    padding: 90px 0px;
-	}
-	
-	/* Menü auf kleinen Dispays untereinander anzeigen UND per Default ausblenden - Soll erst bei Klick auf Button sichtbar werden */
-	#menu {
-	    display: none;
-	    float: none;
-	    background: #00000094;
-	    width: 100%;
-	}
+a:hover {
+    text-decoration: underline;
 }
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+ 
+
+@media screen and (min-width: 993px) {
+    .burger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .col-25, .col-30, .col-70, .col-33 {
+		width:100%;
+	}
+    #header-image {
+        padding: 90px 0;
+    }
+
+    #menu {
+        display: none;
+        float: none;
+        background: #00000094;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu ul li {
+        display: block;
+    }
+
+    #menu.nav-active {
+        display: flex;
+    }
+
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+}
+
+
+/* Forum */
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #ededed;
+}
+
+#neue-bewertung {
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    box-shadow: 3px 3px #a8a8a8;
+}
+
+#neue-bewertung h2 {
+    margin: 0px;
+    font-size: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="range"] {
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#speichern {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#speichern:hover {
+    background-color: #0067d4
+}
+
+#aktualisieren {
+    background-color: #b8b8b8;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#aktualisieren:hover {
+    background-color: #969696
+}
+
+/* um textarea nicht größer zu ziehen */
+textarea {
+    resize: none;
+ }
