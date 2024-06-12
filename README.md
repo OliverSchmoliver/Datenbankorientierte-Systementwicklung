@@ -11,3 +11,13 @@ Black & White Standart Farben
 Fonts:
 Für "... The Band": Rockwell 
 Für Rest: Helvetica (meistens kursiv)
+
+Todo:
+Logo einbauen
+Cookie Banner
+Header Image
+Karusell
+Bug-Counter beheben
+About us Bilderabstände
+Book us Farbe ändern
+header fixen (roter rahmen)
